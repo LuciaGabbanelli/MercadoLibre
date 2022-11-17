@@ -1,0 +1,23 @@
+// colors
+$yellow: #FFE600;
+$dark_grey: #333333;
+$grey: #999999;
+$light_grey: #EEEEEE;
+$blue: #3486FA;
+
+// constants
+$searchBox_height: 34px;
+$header_height: 50px;
+
+// general app styles
+body {
+    margin: 0;
+    * {
+        font-family: Proxima Nova,-apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    }
+};
+
+// breakpoints responsive (react bootstrap)
+$lg: 992px;
+$md: 768px;
+$sm: 576px;

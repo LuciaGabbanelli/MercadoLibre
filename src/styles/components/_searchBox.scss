@@ -1,0 +1,26 @@
+.searchBox_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+
+.searchBox_input {
+    box-sizing: border-box;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+    height: $searchBox_height;
+    border: none;
+}
+
+.searchBox_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $searchBox_height;
+    border-color: transparent;
+    background-color: $light_grey;
+}
+
