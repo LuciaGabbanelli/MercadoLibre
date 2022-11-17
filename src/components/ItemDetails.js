@@ -1,13 +1,15 @@
 import React from 'react'
-// helpers
-import formatNumber from '../helpers/formatNumberHelper'
 // img
 import img from '../assets/ic_shipping.png'
+// helpers
+import formatNumber from '../helpers/formatNumberHelper'
 
 const ItemDetails = ({ data }) => {
   return (
     <div className="itemDetails_container">
+
       <div className="itemDetails_col1">
+
         <div className="itemDetails_row1">
           <img
             className="itemDetails_img"
@@ -20,9 +22,11 @@ const ItemDetails = ({ data }) => {
           <p className="itemDetails_title">Descripción del Producto</p>
           <p className="itemDetails_description">{data?.description}</p>
         </div>
+
       </div>
 
       <div className="itemDetails_col2">
+
         <p className="itemDetails_condition">{`${data?.condition} - ${data?.sold_quantity} vendidos`}</p>
         <p className="itemDetails_title">{data?.title}</p>
         <div className="itemDetails_price">
@@ -31,8 +35,10 @@ const ItemDetails = ({ data }) => {
             <img alt="ícono envío gratis" src={img} className="itemDetails_logo" />
           ) : null}
         </div>
-        <button className="buttons_buy">Comprar</button>
+        <button className="button_buy">Comprar</button>
+
       </div>
+
     </div>
   )
 }

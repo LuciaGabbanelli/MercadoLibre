@@ -4,11 +4,13 @@ import _isEmpty from 'lodash/isEmpty'
 import ItemsContext from '../context/Items/ItemsContext'
 // components
 import ItemsList from '../components/ItemsList'
-// react royter (v6)
+// react router (v6)
 import { useSearchParams } from 'react-router-dom'
 
 const SearchResult = () => {
+  // to search products by url
   const [searchParams] = useSearchParams()
+  
   const { items, getItemsList } = useContext(ItemsContext)
   const [waiting, setWaiting] = useState(true)
 
@@ -23,7 +25,7 @@ const SearchResult = () => {
       // this is to not show old data and wait for the new ones (other solution?)
       setWaiting(false)
     } catch (error) {
-      // TODO: handle errors
+      // TODO: add error handler (axios interceptor) for apps global error handling logic
       console.log(error)
     }
   }

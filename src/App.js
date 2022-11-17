@@ -1,8 +1,9 @@
 import React from 'react'
-// context
+// contexts
 import ItemsState from './context/Items/ItemsState'
-// routes
+// react router (v6)
 import { BrowserRouter } from 'react-router-dom'
+// routes
 import AppRoutes from './routes'
 
 function App() {

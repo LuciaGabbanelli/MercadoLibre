@@ -1,23 +1,25 @@
+// TODO: improve code ?
+
 const renderCategories = (items) => {
   if (items && items?.length !== 0) {
-    // si no hay categorías devuelve null
+    // if there are no categories it returns null
     let categories = null
 
     if (items?.categories?.length > 1) {
-      // primer categoría
+      // first category
       categories = `${items.categories[0]} >`
       const arrayLenght = items.categories.length - 1
       
-      // las restantes
+      // others
       for (let i = 1; i < arrayLenght; i++) {
         categories += ` ${items.categories[i]} >`
       }
       
-      // la última
+      // the last
       categories += ` ${items.categories[arrayLenght]}`
     } else if (items?.categories?.length === 1) {
 
-      // hay una sola categoría
+      // there is only one category
       categories = items.categories[0]
     }
 

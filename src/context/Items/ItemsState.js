@@ -35,7 +35,7 @@ const ItemsState = (props) => {
     }
   }
 
-  // crear un contexto que provea el estado y las funciones a los componentes que estén envueltos
+  // create a context that provides state and functions to the components that are wrapped
   return (
     <ItemsContext.Provider
       value={{

@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import img from '../assets/ic_Search.png'
-// routes
+// react router (v6)
 import { Link, useSearchParams } from 'react-router-dom'
+// img
+import img from '../assets/ic_Search.png'
 
 const SearchBox = () => {
   const [value, setValue] = useState('')
   const [searchParams] = useSearchParams()
 
   useEffect(() => {
+    // product search by url is displayed in SearchBox
     if (searchParams.get('q')) setValue(searchParams.get('q'))
 
     // eslint-disable-next-line react-hooks/exhaustive-deps

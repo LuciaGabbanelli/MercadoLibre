@@ -1,5 +1,6 @@
 import axios from 'axios'
 
+// TODO: add api base url to .env file 
 export const getItem = async (id) => {
   const url = `http://localhost:3000/api/items/${id}`
   try {

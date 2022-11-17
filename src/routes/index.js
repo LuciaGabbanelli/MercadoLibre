@@ -4,7 +4,7 @@ import Layout from '../layout/Layout'
 // pages
 import SearchResult from '../pages/SearchResult'
 import ResultDetails from '../pages/ResultDetails'
-// routes
+// react router (v6)
 import { Route, Routes } from 'react-router-dom'
 
 const AppRoutes = () => {
@@ -27,6 +27,7 @@ const AppRoutes = () => {
           </Layout>
         }
       />
+      {/* TODO: improve style */}
       <Route path="*" element={<h3>404</h3>}></Route>
     </Routes>
   )

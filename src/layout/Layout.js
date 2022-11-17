@@ -1,7 +1,7 @@
 import React from 'react'
-import CategoriesBar from '../components/CategoriesBar'
 // components
 import Header from '../components/Header'
+import CategoriesBar from '../components/CategoriesBar'
 
 const Layout = ({ children }) => {
   return (

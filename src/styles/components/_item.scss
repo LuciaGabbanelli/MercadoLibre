@@ -1,3 +1,5 @@
+// TODO: use constants on padding, image size and font size in media query based on breakpoints(lg, sm)
+
 .item_container {
     background-color: white;
     padding: 16px;
@@ -8,6 +10,24 @@
         text-overflow: ellipsis;
         overflow: hidden;
     }
+}
+
+.item_col1 {  
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item_col2 {
+    flex: 4;
+    padding-left: 16px;
+    overflow: hidden;
+}
+
+.item_col3{
+    flex: 1;
+    padding-left: 16px;
 }
 
 .item_imgContainer {
@@ -27,28 +47,9 @@
     height: 18px;
 }
 
-.item_col1 {  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-}
-
-.item_col2 {
-    padding-left: 16px;
-    flex: 4;
-    overflow: hidden;
-}
-
-.item_col3{
-    padding-left: 16px;
-    flex: 1;
-}
-
 .item_row {
     display: flex;
     align-items: center;
-    width: 300px;
 }
 
 .item_price {
@@ -67,23 +68,7 @@
     color: $grey;
 }
 
-@media (max-width: $sm) {
-   .item_container {
-        flex-direction: column; 
-    } 
-    .item_price {
-        font-size: 18px;
-    }
-    .item_title {
-        font-size: 12px;
-    }
-    .item_location {
-        font-size: 8px; 
-    }  
-}
-
-
- @media (max-width: $lg) {
+@media (max-width: $lg) {
      .item_price {
         font-size: 20px;
     }
@@ -94,4 +79,19 @@
         font-size: 10px; 
     }     
      
+}
+
+@media (max-width: $sm) {
+    .item_container {
+         flex-direction: column; 
+     } 
+     .item_price {
+         font-size: 18px;
+     }
+     .item_title {
+         font-size: 12px;
+     }
+     .item_location {
+         font-size: 8px; 
+     }  
  }

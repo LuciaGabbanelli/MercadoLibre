@@ -70,6 +70,18 @@
     margin-left: 16px;
 }
 
+@media (max-width: $lg) {
+    .itemDetails_price {
+        p {
+            font-size: 40px;
+        }     
+    }
+    .itemDetails_title {
+        font-size: 18px;
+    }
+
+}
+
 @media (max-width: $md) {
     .itemDetails_container {
         flex-direction: column;
@@ -78,20 +90,8 @@
         padding-top: 0;
     }
     .itemDetails_price {
-        p{
+        p {
             font-size: 30px;
         }     
     }
-}
-
-@media (max-width: $lg) {
-    .itemDetails_price {
-        p{
-            font-size: 40px;
-        }     
-    }
-    .itemDetails_title {
-        font-size: 18px;
-    }
-
 }

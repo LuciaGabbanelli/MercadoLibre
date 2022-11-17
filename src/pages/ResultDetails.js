@@ -3,11 +3,13 @@ import React, { useEffect, useState, useContext } from 'react'
 import ItemsContext from '../context/Items/ItemsContext'
 // components
 import ItemDetails from '../components/ItemDetails'
-// react royter (v6)
+// react router (v6)
 import { useParams } from 'react-router-dom'
 
 const ResultDetails = () => {
+  // to search item id by url
   const { id } = useParams()
+  
   const { selectedItem, getItemDetails } = useContext(ItemsContext)
   const [waiting, setWaiting] = useState(true)
 
@@ -22,7 +24,7 @@ const ResultDetails = () => {
       // this is to not show old data and wait for the new ones (other solution?)
       setWaiting(false)
     } catch (error) {
-      // TODO: handle errors
+      // TODO: add error handler (axios interceptor) for apps global error handling logic
       console.log(error)
     }
   }

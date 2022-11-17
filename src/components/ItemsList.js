@@ -1,9 +1,10 @@
 import React from 'react'
+// components
 import Item from './Item'
 
 const ItemsList = ({ data }) => {
   const renderItem = () =>
-    data.items?.map((e, key) => <Item data={e} key={key} />)
+    data?.items?.map((e, key) => <Item data={e} key={key} />)
 
   return <div>{renderItem()}</div>
 }

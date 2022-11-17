@@ -1,17 +1,18 @@
 import React from 'react'
+// react router (v6)
+import { Link } from 'react-router-dom'
 // img
 import img from '../assets/ic_shipping.png'
 // helpers
 import formatNumber from '../helpers/formatNumberHelper'
-// react royter (v6)
-import { Link } from 'react-router-dom'
+
 
 const Item = ({ data }) => {
   return (
     <div className="item_container">
       <div className="item_col1">
         <div className="item_imgContainer">
-          <Link to={`/items/${data.id}`} className="item_link">
+          <Link to={`/items/${data?.id}`} className="item_link">
             <img
               className="item_productImg"
               src={data?.picture}
